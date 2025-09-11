@@ -1,0 +1,120 @@
+/* Reset เล็กน้อย */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1920&auto=format&fit=crop") center/cover no-repeat fixed;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed; inset: 0 0 auto 0;
+  background: rgba(17, 24, 39, .7);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+.nav-wrap {
+  max-width: 1100px; margin: 0 auto; padding: 10px 16px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand { color: #fff; text-decoration: none; font-weight: 700; }
+.nav-links a { color: #fff; text-decoration: none; margin-left: 16px; }
+.nav-links a:hover { text-decoration: underline; }
+.nav-spacer { height: 48px; } /* กันเนื้อหาโดนทับ */
+
+/* Layout sections */
+.section { padding: 48px 16px; }
+.section .glass { max-width: 1100px; margin: 0 auto; }
+
+/* กล่องโปร่ง (glass) */
+.glass {
+  background: rgba(255,255,255,.2);
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: clamp(16px, 4vw, 32px);
+  color: #111;
+}
+.glass-row { display: grid; grid-template-columns: 320px 1fr; gap: 20px; }
+@media (max-width: 900px) { .glass-row { grid-template-columns: 1fr; } }
+
+/* Card (โปรไฟล์ด้านซ้าย) */
+.card {
+  background: rgba(255,255,255,.85);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  padding: 16px; text-align: center;
+}
+.card img { width: 100%; height: auto; border-radius: 8px; }
+.card h1 { margin: 12px 0 6px; font-size: clamp(20px, 3vw, 28px); }
+.card .sub { color: #6b7280; margin: 0 0 6px; }
+
+.socials { display: flex; justify-content: center; gap: 14px; margin-top: 10px; }
+.socials a { color: #111; font-size: 20px; text-decoration: none; }
+.socials a:hover { color: #2563eb; }
+
+/* Panel (กล่องข้อความขวา / กล่องรวม) */
+.panel {
+  background: rgba(255,255,255,.85);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  padding: 20px;
+}
+.panel h2 { margin: 0 0 10px; font-size: clamp(20px, 3vw, 26px); }
+
+/* Grid ทั่วไป */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+/* Projects */
+.project {
+  background: rgba(255,255,255,.85);
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,.12);
+  padding: 16px;
+}
+.project h4 { margin: 0 0 6px; }
+.project p { margin: 0 0 12px; }
+.btn {
+  display: inline-block; text-decoration: none; color: #111;
+  padding: 10px 14px; border-radius: 10px;
+  background: #e5e7eb;
+}
+.btn:hover { background: #d1d5db; }
+
+/* Skills */
+.skills .skill {
+  background: rgba(255,255,255,.85);
+  border-radius: 10px; padding: 12px;
+  display: flex; align-items: center; gap: 10px; justify-content: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,.12);
+}
+.skills img { width: 40px; height: 40px; }
+
+/* Contact */
+.contact-links {
+  display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 16px 0;
+}
+.contact-links a {
+  display: inline-flex; align-items: center; gap: 8px;
+  text-decoration: none; color: #111;
+  background: rgba(255,255,255,.85);
+  padding: 10px 12px; border-radius: 10px;
+}
+.contact-links a:hover { background: #dbeafe; }
+.email { text-align: center; }
+
+/* Footer */
+.footer {
+  text-align: center; color: #fff; padding: 20px 16px;
+  background: rgba(17,24,39,.8); margin-top: 24px;
+}
+
+/* helpers */
+.mt-2 { margin-top: 12px; }
+.mt-3 { margin-top: 18px; }

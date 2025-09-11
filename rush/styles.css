@@ -1,0 +1,58 @@
+/* พื้นหลังเต็มจอ */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+
+.bg {
+  min-height: 100dvh;
+  background: url("img/bg.jpg") no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* กล่องโปร่งตรงกลาง */
+.card {
+  width: min(92vw, 800px);
+  padding: clamp(24px, 5vw, 64px);
+  border-radius: 20px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+}
+
+.card h2 {
+  font-size: clamp(22px, 4vw, 36px);
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: clamp(16px, 2.4vw, 20px);
+  font-weight: normal;
+  margin-bottom: 28px;
+  opacity: 0.9;
+}
+
+/* ลิงก์เลือก */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
