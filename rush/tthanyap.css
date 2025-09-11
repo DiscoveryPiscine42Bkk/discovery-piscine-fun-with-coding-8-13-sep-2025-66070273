@@ -4,7 +4,7 @@ html, body { height: 100%; margin: 0; }
 body {
   font-family: Arial, sans-serif;
   color: #1f2937;
-  background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1920&auto=format&fit=crop") center/cover no-repeat fixed;
+  background: url("./img/mountain-range-body-water_53876-139760.jpg") center/cover no-repeat fixed;
 }
 
 /* Navbar */
