@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Jasmine Alysha Theseira — Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="jazz.css" />
+    <meta name="description" content="Minimal personal portfolio" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <nav class="nav-wrap">
+        <a href="index.html" class="brand">Home</a>
+        <div class="nav-links">
+          <a href="./tthanyap.html">tthanyap</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+        </div>
+      </nav>
+    </header>
+    <div class="nav-spacer"></div>
+
+    <!-- ===== About Section ===== -->
+    <main id="about" class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEgpPposEuvys-rV9bCAaTHIUShHB7o4i0lXT4Hf8EInelyVE-u2pT0pfGDSp5np6KTI4&usqp=CAU"
+             alt="Portrait of Jasmine Alysha Theseira"
+             class="avatar" width="160" height="160" />
+
+        <h1>Jasmine Alysha Theseira</h1>
+        <p class="tagline">Student • Network & Cloud Enthusiast</p>
+
+        <p class="intro">
+            Hi! I’m <strong>jalysha-</strong>. I like building small web apps,
+            tinkering with cloud/network labs, and sharing what I learn. This page is
+            intentionally simple—fast, readable, and to the point.
+        </p>
+
+        <div class="links">
+            <a class="btn" href="https://github.com/jazzpu" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn" href="https://instagram.com/jazzpuz" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </main>
+
+    <!-- ===== Projects Section ===== -->
+    <section id="projects" class="projects">
+      <h2 class="projects-title">Projects</h2>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project small_card">
+          <img class="project-cover" src="img/arduino.jpg" alt="Arduiblox project">
+          <div class="project-body">
+            <h3 class="project-title">Arduiblox</h3>
+            <p class="project-desc">Arduino project integrating Arduino with sensors sending API to HiveMQ broker.</p>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project small_card">
+          <img class="project-cover" src="https://www.cisco.com/E-Learning/bulk/public/cln/store/topologies/route/clip_image028.gif" alt="Cisco Lab">
+          <div class="project-body">
+            <h3 class="project-title">Cisco Self study</h3>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project small_card">
+          <img class="project-cover" src="https://i.ytimg.com/vi/yhvolHv0cRw/maxresdefault.jpg" alt="Cookies project">
+          <div class="project-body">
+            <h3 class="project-title">Cookies</h3>
+            <p class="project-desc">Professional mukbang watcher</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <small>&copy; <span id="year"></span> Jasmine Alysha Theseira</small>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

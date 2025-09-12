@@ -1,6 +1,5 @@
-/* พื้นหลังเต็มจอ */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { height: 100%; }
+html, body { height: 100%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
 .bg {
   min-height: 100dvh;
@@ -10,7 +9,7 @@ html, body { height: 100%; }
   align-items: center;
 }
 
-/* กล่องโปร่งตรงกลาง */
+
 .card {
   width: min(92vw, 800px);
   padding: clamp(24px, 5vw, 64px);
@@ -38,7 +37,6 @@ html, body { height: 100%; }
   opacity: 0.9;
 }
 
-/* ลิงก์เลือก */
 .links {
   display: flex;
   justify-content: center;
